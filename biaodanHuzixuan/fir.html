@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>自我介绍</title>
+	
+	<style>
+
+     #introcon{
+     	position: relative;
+     	margin-top: 10px;
+     	}
+     #intro{
+     	position:absolute;
+
+     }
+     #divbox{
+     	width: 1185px;
+     	height: 250px;
+     	background: pink;
+     }
+
+     
+
+
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+    function Cmd(){
+    	var ipt = document.getElementById("divbox").getElementsByTagName("input")
+    	;
+    	 for(var i = 0; i < ipt.length; i++){
+    	 	if(ipt[i].value.length == 0){
+    	 		alert("所有资料都需要填写");
+    	 		ipt[i].focus();
+    	 		return false;
+    	 	}
+    	}
+    	return true;
+
+    }
+ function test()
+ {
+            if(document.a.fname.value.length > 7)
+            {
+                alert("请输入七个字以内的姓名");
+                return false;
+            }
+            if(document.a.intro.value.length > 100)
+            {
+            	alert("请输入100个字以内的自我介绍");
+            	return false;
+            }
+}    
+ function validatemobile(mobile) 
+{ 
+if(phonenum.length!=11) 
+{ 
+alert("请输入有效的手机号码，需是11位");
+return false; 
+} 
+var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+if(!myreg.test(mobile)) 
+{ 
+alert("请输入有效的手机号码!"); 
+return false; 
+} 
+} 
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+dotpos=value.lastIndexOf(".")
+if (apos<1||dotpos-apos<2) 
+  {alert(alerttxt);return false}
+else {return true}
+}
+}
+
+
+function validate_form(thisform)
+{
+with (thisform)
+{
+if (validate_email(email,"请输入正确的邮箱地址!")==false)
+  {email.focus();return false}
+}
+}
+function check(){
+	var x=document.getElementById("grade");
+	if(x.value>2014)
+	{
+		alert("仅接受2010-2014级！");
+		return false;
+	}
+	if(x.value<2010)
+	{
+		alert("仅接受2010-2014级！");
+		return false;
+	}
+}
+
+</script>
+	<form action="fir.html" name="a" onsubmit="validate_form(this);test(); validatemobile();check();" method="get">
+	
+<div id="divbox">
+请输入您的姓名：
+<input type="text" id="fname" name="fname"/>
+
+<br />
+请输入您的年级：
+<input type="text" id="grade" name="grade" placeholder="仅接受2010-2014级！" />
+
+
+请输入您的手机号码：
+<input type="text" id="phonenum" name="phonenum"  />
+
+请输入您的邮箱：
+<input type="text" id="mail" name="email" size="30">
+<div id="introcon">请写一段自我介绍：
+<textarea name="intro" id="intro" cols="30" rows="10" placeholder="不能超过50个字符！"></textarea></div>
+</div>
+<input type="submit" id="buttoncon" value="提交" onclick="Cmd();" >
+
+</form>
+
+</body>
+</html>
