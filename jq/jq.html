@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>备忘录</title>
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <style>
+     li{
+     	list-style: none;
+     }
+     .add{
+     	margin-left: 200px;
+     	margin-top: 20px;
+     }
+     h2{
+     	margin-top: -30px;
+     }
+     .delete{
+     	margin-left: 300px;
+     	
+     }
+     textarea{
+     	height: 50px;
+     	width: 200px;
+     	resize: none;
+     }
+     
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+     <button class="add">添加</button>
+
+        <h2>备忘录</h2>
+        <hr>
+      
+        <div id="tips">请单击文字添加删除线，双击删除。</div>
+
+        <ul></ul>
+    </div>
+    <script type="text/javascript">
+
+        $(function(){
+
+            $(".add").on("click",function(){
+                $("ul").append("<li><textarea></textarea><button class='sub'>确定</button></li>");
+                $("ul").on("click" ,"li .sub",function(){
+
+                    var text=$(this).parent().children("textarea").val();
+
+                    $(this).parent().html("<p>"+text+"</p>"+ "<input value='X' type='button' class='delete'>");
+
+                      $("input:button").click(function(){
+
+                      	$(this).parent().remove();
+                      })
+                })
+
+
+              /*  $("ul").on("click","li p",function(){
+                          
+                          $(this).css("text-decoration","line-through");
+                  
+
+                      	  $("li p").dblclick(function(){
+                     $(this).css("text-decoration","none");
+                            });
+                     
+                  })*/        //用on实现
+                 $("ul").delegate("li p","click",function(){
+                          
+                          $(this).css("text-decoration","line-through");
+                      	  $("li p").dblclick(function(){
+                     $(this).css("text-decoration","none");
+                            });
+                     
+                  })
+
+                })
+
+               /* $("ul").on("click",".delete",function(){
+                    $("").remove();
+
+            })     */
+                    $("ul").delegate(".delete","click",function(){
+                    $("").remove();
+
+            })     
+
+
+        })
+
+ 
+
+    </script>
+
+</body>
+
+</html>
