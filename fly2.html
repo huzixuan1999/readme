@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <style>
+    *{
+       	margin: 0;
+       	padding: 0;
+       }
+       #mycanvas{
+       	background: pink;
+       }
+
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas">您的浏览器不支持canvas</canvas>
+    <script type="text/javascript">
+    var can = document.getElementById("mycanvas");
+    var ctx = can.getContext("2d");
+    var wid = window.innerWidth;
+    var hei = window.innerHeight;
+    can.width = wid;
+    can.height = hei;
+    var snow = 100;
+    var obj = [];
+    function creatSnow(x,y,r)
+    {
+        var  x=Math.random() * wid;
+        var  y=Math.random() * hei;
+        var  r=Math.random() * 10+1;
+        this.x=x; this.y=y; this.r=r;
+    }
+     creatSnow.prototype.Drawsnow = function() {
+      ctx.clearRect(0, 0, wid, hei);
+      ctx.fillStyle = "white";
+      ctx.beginPath();
+      for(i=0;i<snow;i++)
+      {
+         this.x=obj[i].x;this.y=obj[i].y; this.r=obj[i].r;
+         ctx.moveTo(this.x,this.y);
+         ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI, false);
+      }  
+      ctx.fill();
+      for(i=0;i<snow;i++)
+      {
+        this.y = obj[i].y + Math.random() * 2 + 1;
+        if(this.y>hei)
+       {
+         this.y = 0;
+       }
+        this.x = obj[i].x + Math.random() * 2 + 1;
+       if(this.x>wid)
+       {
+         this.x = 0;
+       }   
+         obj[i].x=this.x;
+         obj[i].y=this.y;
+        
+      }
+        ctx.closePath();
+     }
+     for(i=0;i<snow;i++)
+      {
+        creatSnow();
+        obj[i] = new creatSnow(this.x,this.y,this.r);
+      }
+   setInterval(creatSnow.prototype.Drawsnow,50);
+    </script>
+</body>
+</html>
