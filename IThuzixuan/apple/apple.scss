@@ -1,0 +1,519 @@
+@mixin dx 
+{
+    width: 980px;
+  // width: 50%;
+    margin: 0 auto;
+}
+@mixin dx2 {
+    width: 817px;
+    margin: 0 auto;
+}
+@mixin bz{
+   font-size: 27px;
+   font-weight: 400;
+   letter-spacing: 0.5px;
+}
+@mixin sz {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+@mixin lz{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 112, 201);
+    letter-spacing: 0.5px;
+}
+$bor0:1px solid white;
+$bor1:1px solid red;
+$bor2:1px solid purple;
+$bor3:1px solid blue;
+$bor4:1px solid #dcdcdc;
+
+*{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-snap-points-y: none;
+}
+#top{
+    width: 100%;
+    height: 570px;
+ //   border: $bor1;
+    background-image: url(back.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#t1{
+    width: 100%;
+    background: rgb(46, 46, 45);
+    opacity: 0.85;
+ //   border-bottom: $bor0;
+}
+#nav{
+    @include dx;
+    height: 45px;
+ //   border:$bor1;
+}
+#t2{
+    @include dx;
+    height:50px;
+    border-bottom: $bor0;
+}
+#left{
+    font-size: 25px;
+    color: white;
+    float: left;
+    line-height: 50px;
+}
+.right{
+    line-height: 50px;
+    font-size: 15px;
+    color: white;
+    float: right;
+    margin-left: 25px;
+}
+#t3{
+    width:840px;
+    margin: 0 auto; 
+    margin-top: 45px;
+}
+#font{
+    font-size: 43px;
+    color: white;
+    letter-spacing: 1px;
+}
+#mid{
+    width: 100%;
+  //  border-bottom: $bor2;
+}
+#m1{
+    width: 100%;
+   height:275px;
+    border-bottom:$bor4;
+}
+#kuang{
+    @include dx;
+    height: 172px;
+  //  border: $bor2;
+    margin-top: 50px;
+}
+.kuangkuang{
+    width: 29%;
+    height: 172px;
+//    border: $bor1;
+    float: left;
+    margin-right: 6.1%;
+}
+#kuangkuang3{
+    width: 29%;
+    height: 172px;
+ //   border: $bor1;
+    float: left;
+}
+.kt{
+    @include bz;
+}
+.ks{
+    margin-top: 20px;
+}
+.kf{
+    @include lz;
+    margin-top: 20px;
+    
+}
+#m2{
+    width: 100%;
+    border-bottom: $bor4;
+}
+#m3{
+    width: 100%;
+   // height:395px;
+    border-bottom: $bor4;
+}
+#m4{
+    width: 100%;
+   // height:425px;
+    border-bottom: $bor4;
+}
+#m5{
+     width: 100%;
+  //  height:480px;
+    border-bottom: $bor4;
+}
+#m6{
+    @include dx;
+    height: 246px;
+ //   border-bottom: $bor2;
+}
+#foot{
+    width: 100%;
+    height: 316px;
+    background-color: rgb(242,242,242);
+ //   border: $bor3;
+}
+#suo{
+    @include dx2;
+    height:297px;
+ //   border: $bor1;
+   // background: red;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+#suotu{
+    width: 400px;
+    float: left;
+//    border: $bor2;
+}
+#suozi{   
+     width:408.5px;
+     height: 295.5px;
+     float: right;
+ //    border: $bor3;
+}
+#suozitop{
+    @include bz;
+}
+#suozisec{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    line-height: 35px;
+}
+.suoziblu{
+    @include lz;
+    margin-top: 15px;
+}
+#ID{
+    @include dx2;
+    height:297px;
+   // border: $bor1;
+   // background: red;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+#idtu{
+    width: 400px;
+    float: right;
+//    border: $bor2;
+}
+#idzi{
+    width:408.5px;
+    height: 295.5px;
+    float: left;
+ //   border: $bor3;
+}
+#idzitop{
+    @include bz;
+    font-weight: 500;
+}
+#idzisec{
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.idziblu{
+    @include lz;
+    margin-top: 15px;
+}
+#yun{
+    @include dx2;
+    height:347px;
+  //  border: $bor1;
+   // background: red;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+#yuntu{
+    width: 400px;
+    float: left;
+ //   border: $bor2;
+}
+#yunzi{
+    width:408.5px;
+    height: 325.5px;
+    float: right;
+  //  border: $bor3;
+}
+#yunzitop{
+    @include bz;
+    font-weight: 500;
+}
+#yunzisec{
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    line-height: 35px;
+}
+.yunziblu{
+    @include lz;
+    margin-top: 15px;
+}
+#old{
+    @include dx;
+    height: 490px;
+ //   border: $bor2;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#leftkuang{
+    width: 45%;
+    float: left;
+}
+#leftzi{
+  //  height: 142.75px;
+}
+#leftzitop{
+    @include bz;
+    margin-top: 12px;
+    font-weight: 500;
+}
+#leftzisec{
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+.leftziblu{
+    @include lz;
+}
+#rightkuang{
+    width: 45%;
+    float: right;
+}
+#rightzi{
+   // height: 142.75px;
+}
+#rightzitop{
+    @include bz;
+    margin-top: 12px;
+    font-weight: 500;
+}
+#rightzisec{
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+.rightziblu{
+    @include lz;
+}
+#m6top{
+    @include bz;
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.box{
+    border:1px solid gray;
+    width: 80%;
+    height: 50px;
+    border-radius: 3px;
+    font-size:18px;
+    text-align: center;
+    background: white;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    opacity: 1;
+
+}
+input{
+    text-align: 30px;
+    font-size: 20px;
+    line-height: 2rem;
+    width: 90%;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-top: 8px;
+    margin-left: 30px;
+    color: none;
+}
+.haha{
+    position: absolute;
+    left: 6px;
+    top: 3px;
+}
+#foottop{
+    @include dx;
+    height: 24px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  //  border: $bor1;
+}
+#footmid{
+    @include dx;
+    height: 64%;
+    border-bottom: $bor4;
+}
+#footbot{
+    @include dx;
+ //   height: 8px;
+    padding-top: 10px;
+    padding-bottom: 24px;
+//    border: $bor1;
+}
+#foottop img{
+    float: left;
+}
+#foottop div{
+    float: left;
+    margin-left: 10px;
+    line-height: 24px;
+    margin-top: 4px;
+}
+.footkuang{
+    width: 25%;
+  //  height: 180px;
+    float: left;
+}
+.kuangtop{
+    font-size: 12px;
+    font-weight: 550;
+}
+.kuangmid{
+    font-size: 12px;
+    margin-top: 6px;
+}
+#copy{
+    float: left;
+    font-size: 12px;
+    color: gray;
+   // color: antiquewhite;
+}
+.xiaohezi{
+    float: left;
+    font-size: 12px;
+    width: 75px;
+    text-align: center;
+ //   border-left: $bor2;
+}
+#xiaohezi{
+    border-left: 0;
+}
+.jiantou{
+    color: gray;
+    opacity: 0.7;
+}
+.navbox{
+    width: 11%;
+  //  height: 44px;
+  //  border: $bor2;
+    float: left;
+}
+.navbo{
+    float: left;
+    width: 9%;
+    height: 45px;
+  //  height: 44px;
+}
+.navboxx{
+    float: right;
+    height: 45px;
+    width: 11%;
+    
+  //  height: 44px;
+}
+.navboxxxx{
+    float: left;
+    width: 9%;
+    height: 45px;
+    display: none;
+}
+.navbox{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    line-height: 45px;
+    width: 11%;
+    height: 45px;
+    margin-left: 1%;
+    text-align: center;
+}
+.navboxxx{
+    float: left;
+    height: 45px;
+    width: 8%;
+    text-align: center;
+}
+.navboxx img{
+    float: right;
+}
+#jishu{
+    opacity: 0.6;
+}
+#t4{
+    width:300px;
+    margin: 0 auto; 
+    margin-top: 25px;
+    margin-bottom: 35px;
+    display: none;
+}
+@media screen and (max-width: 655px) 
+{
+    #top{
+        height: 327px;
+    }
+   
+    #t3{
+        display: none;
+    }
+    #t4{
+        display: block;
+    }
+    #font1{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+     #m1{
+        padding-bottom: 50px;
+     }
+     #old{
+        width: 304px;
+      height: 780px;
+    }
+    #leftkuang{
+        width: 300px;
+        height: 360px;
+    }
+    #leftkuang img{
+        width: 357px;
+        height: 170px;
+    }
+    #rightkuang img{
+        width: 357px;
+        height: 170px;
+    }
+    #rightkuang{
+        width: 300px;
+        height: 360px;
+    }
+    #old1{
+     //   float: left;
+        margin-left: 150px;
+    }
+    #old2{
+        margin-left: 150px;
+
+    }
+   #m5{
+       height: 850px;
+    }
+    #leftzi{
+        float: left;
+        margin-left: 20px;
+    }
+    #rightzi{
+        float: left;
+        margin-left: 20px;
+    }
+}

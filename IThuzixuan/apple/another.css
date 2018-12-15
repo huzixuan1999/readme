@@ -1,0 +1,85 @@
+@media screen and (max-width: 1024px) {
+  #m1 {
+    height: 550px;
+  }
+  #kuang {
+    width: 694px;
+    height: 453px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  .kuangkuang {
+    width: 694px;
+    height: 150px;
+    overflow: hidden;
+  }
+  #kuangkuang3 {
+    width: 694px;
+    height: 150px;
+  }
+  .kt {
+    margin-top: 25px;
+  }
+  #suotu {
+    margin-left: 20%;
+  }
+  #suozi {
+    float: left;
+    width: 694px;
+    text-align: center;
+  }
+  #suo {
+    width: 694px;
+    height: 560px;
+  }
+  #ID {
+    width: 694px;
+    height: 560px;
+  }
+  #idtu {
+    margin-left: 20%;
+  }
+  #idzi {
+    float: left;
+    width: 694px;
+    text-align: center;
+  }
+  #yun {
+    width: 714px;
+    height: 540px;
+  }
+  #yuntu {
+    margin-left: 20%;
+  }
+  #yunzi {
+    float: left;
+    width: 714px;
+    text-align: center;
+  }
+  #old {
+    width: 694px;
+  }
+  #leftkuang {
+    width: 100%;
+  }
+  #leftkuang img {
+    width: 237px;
+  }
+  #rightkuang img {
+    width: 237px;
+  }
+  #rightkuang {
+    width: 100%;
+    margin-top: 60px;
+  }
+  #old1 {
+    float: left;
+    margin-right: 12px;
+  }
+  #old2 {
+    float: left;
+    margin-right: 12px;
+  }
+}

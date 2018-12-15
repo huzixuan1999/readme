@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+  // overflow-x:visible;
+  // overflow:-moz-scrollbars-vertical; 
+    overflow:-Scroll;
+
+}
+@mixin dx {
+    width: 1520px;
+    margin: 0 auto;
+}
+@mixin cha1 
+{
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(51,50,50,1);
+    line-height:18px;  
+}
+@mixin cha1 
+{
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(51,50,50,1);
+    line-height:18px;  
+}
+@mixin sp {
+    width: 103px;
+    height: 103px;
+   // border: $bor1;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+$bor1:1px solid red;
+$bor2:1px solid yellow;
+$bor3:1px solid blue;
+#top{
+   width: 100%;
+   height: 1128px;
+   padding-top: 20px;
+  // border: $bor1;
+background:linear-gradient(180deg,rgba(232,231,227,1) 0%,rgba(232,231,227,0) 100%);
+}
+#mid{
+    width: 100%;
+    height: 987px;
+   // border: $bor2;
+}
+#foot{
+    width:100%;
+    height: 346px;
+   // border: $bor3;
+}
+#t1{
+    @include dx;
+    height: 34px;
+   // border: $bor1;
+}
+#t2{
+    @include dx;
+    height: 42px;
+    margin-top: 115px;
+   // border: $bor2;
+}
+#PLANTS
+{
+    font-size: 50px;
+    height: 42px;
+    @include cha1;
+    float: left;
+    width:240px;
+    margin-top: 15px;
+
+}
+#line{
+    width:1280px;
+    height:42px;
+    float: left;
+    border-bottom:1px solid rgba(166,166,166,1);
+}
+#t3{
+    @include dx;
+    height: 678px;
+    margin-top: 75px;
+  //  border: $bor3;
+}
+#t4
+{
+   @include dx;
+   height: 47px;
+   margin-top: 113px;
+  // border: $bor1;
+}
+#left{
+    float: left;
+    @include cha1;
+    line-height: 30px;
+    font-size: 23px;
+ 
+  }
+  #right{
+    float: right;
+    font-size: 23px;
+    @include cha1;
+    line-height: 30px;
+  }
+#navmid{
+    width:341px;
+    height:34px;
+    @include cha1;
+     font-size:43px;
+   margin-left: 460px;
+    margin-top: 5px;
+    letter-spacing: 3px;
+    float: left;
+  }
+  #navmid span{
+      margin-left: 10px;
+  }
+  #car{
+    float: right;
+    @include cha1;
+    margin-right: 30px;
+    line-height: 30px;
+    font-size: 23px;
+  }
+  #carp{
+      float: right;
+      margin-top: -5px;
+  }
+ /* #box{
+      width: 678px;
+      height: 678px;
+      float: left;
+  }*/
+  #zi{
+       width: 635px;
+       height: 678px;
+       float: right;
+  //     border: $bor3;
+  }
+  #pt1{
+       font-family:MicrosoftYaHei;
+       font-weight:400;
+      color:rgba(51,50,50,1);
+      width:283px;
+      height:58px;
+      font-size:60px;
+  }
+  #pt2{
+    width:431px;
+    height:33px;
+    font-size:30px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+    letter-spacing: 1px;
+    @include cha1;
+  }
+  #pt3{
+    width: 620px;
+    height: 108px;
+    background-color: #F7F7F7;
+  }
+  #sp1{
+     @include sp; 
+  }
+  #sp2{
+     @include sp;
+   }
+  #sp3{
+    @include sp;
+  }
+  #sp4{
+    @include sp;
+  }
+  #sp5{
+    @include sp;
+    margin-right: 0px;
+  }
+  #sp6{
+      width:70px;
+      height:130px;
+      margin-left: 0px;
+      float: left;
+  }
+  #pt3 span{
+      color:#BFBFBF;
+      width: 30px;
+      font-weight: 400;
+      font-size: 60px;
+      height: 75px;
+      margin-top: 25.5px;
+  }
+  #pt4{
+      margin-top: 30px;
+      width: 625px;
+      height: 30px;
+     font-size:23px;
+     @include cha1;
+   
+  }
+  #t5{
+      width: 645px;
+  }
+
+  .kuangkuang{
+      width: 179px;
+      height: 39px;
+      background-color: white;
+    //  text-align: center;
+      line-height: 39px;
+      color:#817E80;
+      margin-top: 54px;
+      float: left;
+      margin-bottom: 44px;
+  }
+  #kuangkuang2{
+      margin-left: 47px;
+      margin-right: 47px;
+  }
+  .kuangkuang input{
+      width: 178px;
+      height: 38px;
+      border: 1px solid whitesmoke;
+  }
+  #pt6{
+     
+     @include cha1;
+     color: rgba(129, 126, 128, 1);
+  }
+  
+  #pt7{
+      width: 615px;
+      height: 87px;
+      font-size:43px;
+      margin-top: 57px;
+    //  background: #861111;
+    background:  #A40343;
+    opacity: 0.65;
+      font-family:MicrosoftYaHei;
+      text-align: center;
+      font-weight:400;
+      color:rgba(233,251,251,1);
+      line-height:87px;
+  }
+  #t4{
+    font-size:43px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(75,79,79,1);
+    line-height:43px;
+  }
+  #midkuang{
+    @include dx;
+    height:937px;
+  // border: $bor1;
+    background:#F7F7F7;
+  }
+
+  #User{
+     
+      @include cha1;
+      font-size: 21px;
+      margin-bottom: 41px;
+      margin-top: 30px;
+  }
+  #User span{
+      @include cha1;
+      color: #A40343;
+      font-size: 21px;
+  }
+  #bao3{
+    width: 1412px;
+    height: 920px;
+    //border: $bor2;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  p{
+      width: 1412px;
+      height: 392px;
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      @include cha1; 
+      line-height: 30px;
+  }
+  #bao{
+      margin-top: 45px;
+      width: 1412px;
+      height:410px;
+      margin: 0 aoto;
+  }
+  .poto1{
+      width: 410px;
+      height: 342px;
+      float: left;
+  }
+  #poto2{
+      margin-left: 64px;
+      margin-right: 64px;
+  }
+  #more{
+      @include cha1;
+      font-size: 20px;
+      width: 86px;
+      height: 30px;
+      font-weight: 500;
+      margin: 0 auto;
+  }
+  #more:hover{
+     text-decoration: underline;
+  }
+  #foot2{
+    width: 100%;
+    height: 300px;
+    top: 100px;
+    left: 0px;
+    background-color: #EAE9E7;
+  
+}
+  #bao4{
+    width: 1380px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+ //   border: 1px solid rebeccapurple;
+}
+.footintro
+{
+    width: 180px;
+    height: 180px;
+    float: left;
+    margin-left: 150px;
+}
+
+.text{
+    @include cha1;
+    color: #797879;
+    font-size: 14px;
+    margin-top: 15px;
+}
+#text1{
+    @include cha1;
+    font-size: 20px;
+}
+.box {
+    width:678px;
+    height: 678px;
+    position:relative;
+    float: left;
+}
+.big {
+	width:300px;
+	height:300px;
+	position:absolute;
+	top:0;
+	left:360px;
+    border:1px solid #ccc;
+    overflow:hidden;
+	display:none;
+
+}
+.mask {
+	width:180px;
+	height:180px;
+    background:repeating-linear-gradient(45deg,gray 0, gray 3px,
+       #ccc 0, #ccc 6px, 
+       gray 0, gray 9px, 
+       #ccc 0 , #ccc 12px);
+	position:absolute;
+	top:0;
+    left:0;
+    opacity: 0.5;
+	cursor:crosshair;
+	display:none;
+}
+.small {
+	position:relative;
+}
+.box img {
+	vertical-align:top;
+}
+#bigBox img {
+	position:absolute;
+}
+
+
+
+
+

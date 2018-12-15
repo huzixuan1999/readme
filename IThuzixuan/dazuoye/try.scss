@@ -1,0 +1,464 @@
+@mixin dx 
+{
+    width: 1520px;
+    margin: 0 auto;
+}
+@mixin bor 
+{
+    border: 0.5px solid salmon;
+}
+@mixin cha1
+{
+    font-family:MicrosoftYaHei;
+    color:rgba(39,37,38,1);
+    font-weight: 400;
+    font-size: 23px;
+}
+@mixin cha2
+ {
+    font-family:MicrosoftYaHei;
+    height:9px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(112,109,110,1);
+    font-size: 23px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow: -Scroll;
+}
+#top{
+    width: 100%;
+  //  margin: 0 auto;
+    height:1124px;
+ //   @include bor;
+    background: linear-gradient(to bottom, #E8E7E3 0%,#ffffff 100%);
+}
+#t1{
+    @include dx;
+    height: 90px;
+//  border: 1px solid red;
+    
+}
+#t2{
+    @include dx;
+    height: 50px;
+  //  @include bor;
+    margin-top: 20px;
+}
+#t3{
+    @include dx;
+  //  @include bor;
+    margin-top: 50px;
+ //  border: 1px solid yellow;
+    height: 120px;
+}
+#t4{
+    @include dx;
+ //  border: 1px solid blue;
+    height: 350px;
+  //  margin-top:30px;
+}
+#t5{
+    @include dx;
+    height: 310px;
+    padding-top: 27px;
+
+  //  border: 1px solid red;
+    margin-top: 40px;
+    background: #E8E7E3;
+}
+#mid{
+    width: 100%;
+   // margin: 0 auto;
+    height: 1420px;
+ //   border-left: 1px solid #EAE9E7;
+  //  border-right: 1px solid #EAE9E7;
+  //  border: 1px solid red;
+  
+}
+#foot{
+    width: 100%;
+ //   margin: 0 auto;
+   // height: 400px;
+    position: relative;
+   // border-left: 1px solid #EAE9E7;
+  //  border-right: 1px solid #EAE9E7;
+   // border: 1px solid blue;
+}
+#more{
+    width:38px;
+ //   height:12px;
+    font-size:30px;
+    font-weight: 500;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(63,61,61,1);
+    line-height:9px;    
+    margin-left:180px;
+    margin-top: 50px;
+    
+}
+.poto2{
+    float: left;
+    margin-left: 114px;
+    margin-top: 112px;
+}
+.poto2:hover img{
+    transform: (scale(1.1));
+}
+.poto1{
+    margin-left: 55px;
+    float: left;
+}
+.poto1:hover{
+    width: 268px;
+    height: 317px;
+}
+.poto1:hover img{
+    transform: (scale(1.1));
+}
+#fir{
+    margin-left: 0;
+}
+#poto{
+    width: 1527px;
+ //   height:936px;
+    margin:0 auto;
+}
+#left{
+    float: left;
+    @include cha1;
+    line-height: 70px;
+ 
+  }
+  #right{
+    float: right;
+    @include cha1;
+    line-height: 70px;
+ 
+  }
+#navmid{
+     width:171px;
+     font-size:43px;
+    margin-left: 500px;
+    font-weight: 400;
+    margin-top: 15px;
+    letter-spacing: 3px;
+    float: left;
+  }
+  #navmid span{
+      margin-left: 10px;
+  }
+
+#fir3{
+    width: 1220px;
+    margin: 0 auto;
+}
+#t2 span{
+    width: 185px;
+    text-align: center;
+    float: left;
+    margin-left: 53px;
+    @include cha1;
+}
+#t31
+{
+    @include cha2;
+    margin-top: 10px;
+}
+#t32
+{
+    width:376px;
+    height:23px;
+    font-size:43px;
+    font-family:MicrosoftYaHei;
+    font-weight:500;
+    color:rgba(221,39,60,1);
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.black
+{
+   @include cha1;
+   width: 99px;
+   float: left;
+}
+.price{
+    height: 40px; 
+    margin-top: 41px;
+}
+#no{
+    margin-top: 0px;
+}
+.bao .much{
+    float: left;
+    margin-right: 30px;
+    @include cha2;
+}
+.bao{
+    width: 1000px;
+    margin-left: 100px;
+    float: left;
+}
+#ad{
+    margin-top: 30px;
+    @include cha1;
+}
+#ad span
+{
+    @include cha2;
+    font-size: 20px;
+    color: rgba(221,39,60,1);
+}
+#foot1{
+    width: 987px;
+    height: 56px;
+   // border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-bottom: 60px;
+}
+.page
+{
+  float: left;  
+  height: 57px;
+  width: 57px;
+  background-color: #E8E7E3;
+  border-radius: 50%;
+  margin-left: 48px;
+  text-align: center;
+  line-height: 57px;
+  font-weight: 400;
+  font-size: 30px;
+}
+.page1{
+    font-weight: 500;
+    float: left;
+    margin-left: 48px;
+    width: 53px;
+    height: 53px;
+    font-size: 30px;
+    line-height: 27px;
+}
+#jump{
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 400;
+    margin-left: 35px;
+    @include cha1;
+    font-size: 30px;
+}
+#kuang{
+    float: right;
+    margin-left: 15px;
+    width: 45px;
+    height: 38px;
+    font-weight: 500;
+     margin-top: 10px;
+    border: 1px solid #BFBFBF;
+}
+#foot2{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #EAE9E7;
+  
+}
+#bao2{
+    width: 1300px;
+   // height: 160px;
+    margin: 0 auto;
+   // border: 1px solid rebeccapurple;
+}
+.footintro
+{
+   // width: 180px;
+    height: 180px;
+    float: left;
+    margin-left: 130px;
+}
+
+.text{
+    @include cha2;
+    margin-top: 25px;
+}
+#text1{
+    @include cha1;
+    
+}
+#h1{
+    @include dx;
+    margin-top: 40px;
+}
+#h2{
+    @include dx;
+}
+#h3{
+    @include dx;
+}
+.poto1 img{
+    width: 239px;
+    height: 284px;
+
+}
+
+#foot3{
+    width: 987px;
+    height: 56px;
+   // border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-bottom: 60px;
+    display: none;
+}
+#yes{
+    width: 30px;
+    height: 30px;
+}
+#noo{
+    width: 30px;
+    height: 30px;
+}
+#guang{
+    float: right;
+    margin-left: 15px;
+    width: 45px;
+    height: 38px;
+    font-weight: 500;
+     margin-top: 10px;
+    border: 1px solid #BFBFBF;
+}
+
+#mach1:hover{
+    text-decoration: underline;
+}
+#mach2:hover{
+    text-decoration: underline;
+}
+#mach3:hover{
+    text-decoration: underline;
+}
+#mach4:hover{
+    text-decoration: underline;
+}
+#mach5:hover{
+    text-decoration: underline;
+}
+#mach6:hover{
+    text-decoration: underline;
+}
+
+#much1:hover{
+    text-decoration: underline;
+}
+#much2:hover{
+    text-decoration: underline;
+}
+#much3:hover{
+    text-decoration: underline;
+}
+#much4:hover{
+    text-decoration: underline;
+}
+
+
+#mask1:hover{
+    text-decoration: underline;
+}
+#mask2:hover{
+    text-decoration: underline;
+}
+#mask3:hover{
+    text-decoration: underline;
+}
+#mask4:hover{
+    text-decoration: underline;
+}
+#mask5:hover{
+    text-decoration: underline;
+}
+#mask6:hover{
+    text-decoration: underline;
+}
+#mask7:hover{
+    text-decoration: underline;
+}
+
+
+#mase1:hover{
+    text-decoration: underline;
+}
+#mase2:hover{
+    text-decoration: underline;
+}
+#mase3:hover{
+    text-decoration: underline;
+}
+.poto1{
+    position: relative;
+}
+.zhao
+{
+    width: 265px;
+    height: 315px;
+    background:black;
+    z-index: 555;
+    display: none;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    opacity: 0.65;
+}
+.poto1:hover .zhao{
+    display: block;
+}
+.pn{
+    width:180px;
+    height:40px;
+    margin: 0 auto;
+    @include cha1;
+    font-size:30px;
+    margin-top: 10px;
+    margin-left: 60px;
+    color:rgba(233,251,251,1);
+}
+.bl{
+    width: 222px;
+    height: 132px;
+    @include cha1;
+    font-size:15px;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    color:rgba(233,251,251,1);
+}
+.white{
+    width: 172px;
+    height: 32px;
+    border: 1px solid white;
+    line-height: 32px;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 45px;
+    color: #E8E7E3;
+    font-size: 20px;
+}
+#car{
+    float: right;
+    @include cha1;
+    margin-right: 30px;
+    line-height: 30px;
+    font-size: 23px;
+    margin-top: 19px;
+  }
+  #carp{
+      float: right;
+      margin-top: 15px;
+      margin-right: 13px;
+  }
+  #fire{
+     vertical-align: -10px;
+  }
